@@ -119,7 +119,6 @@ export default function Blog() {
             <div className="flex items-center gap-1 rounded-xl border border-[#262626] bg-[#161616] p-1">
               <button
                 onClick={() => setViewMode("grid")}
-                title="عرض شبكي"
                 className={`rounded-lg p-2 transition-all duration-300 ${
                   viewMode === "grid"
                     ? "bg-orange-500 text-white"
@@ -130,7 +129,6 @@ export default function Blog() {
               </button>
               <button
                 onClick={() => setViewMode("list")}
-                title="عرض قائمة"
                 className={`rounded-lg p-2 transition-all duration-300 ${
                   viewMode === "list"
                     ? "bg-orange-500 text-white"
