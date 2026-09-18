@@ -1,11 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Layout from "./Layout/Layout";
-import Home from './Pages/Home';
-import Blog from './Pages/blog';
-import BlogPosts from './Pages/BlogPosts';
+import Home from "./Pages/Home";
+import Blog from "./Pages/blog";
+import BlogPosts from "./Pages/BlogPosts";
 import Notfound from "./Pages/Notfound";
-
 
 const routers = createBrowserRouter([
   {
@@ -16,16 +15,19 @@ const routers = createBrowserRouter([
         index: true,
         element: <Home />,
       },
+      { path: "home", element: <Home /> },
       { path: "blog", element: <Blog /> },
-      {path: "blog/:slug", element: <BlogPosts />},
+      { path: "blog/:slug", element: <BlogPosts /> },
       { path: "*", element: <Notfound /> },
     ],
   },
 ]);
 function App() {
-  return <>
-  <RouterProvider router={routers} />
-  </>;
+  return (
+    <>
+      <RouterProvider router={routers} />
+    </>
+  );
 }
 
 export default App;
