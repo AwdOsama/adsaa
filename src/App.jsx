@@ -15,7 +15,7 @@ const routers = createBrowserRouter([
         index: true,
         element: <Home />,
       },
-      { path: "home", element: <Home /> },
+      { path: "adsaa", element: <Home /> },
       { path: "blog", element: <Blog /> },
       { path: "blog/:slug", element: <BlogPosts /> },
       { path: "*", element: <Notfound /> },
