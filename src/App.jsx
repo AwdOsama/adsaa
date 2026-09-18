@@ -6,22 +6,27 @@ import Blog from "./Pages/blog";
 import BlogPosts from "./Pages/BlogPosts";
 import Notfound from "./Pages/Notfound";
 
-const routers = createBrowserRouter([
+const routers = createBrowserRouter(
+  [
+    {
+      path: "",
+      element: <Layout />,
+      children: [
+        {
+          index: true,
+          element: <Home />,
+        },
+        { path: "blog", element: <Blog /> },
+        { path: "blog/:slug", element: <BlogPosts /> },
+        { path: "*", element: <Notfound /> },
+      ],
+    },
+  ],
   {
-    path: "",
-    element: <Layout />,
-    children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      { path: "adsaa", element: <Home /> },
-      { path: "blog", element: <Blog /> },
-      { path: "blog/:slug", element: <BlogPosts /> },
-      { path: "*", element: <Notfound /> },
-    ],
+    basename: "/adsaa/",
   },
-]);
+);
+
 function App() {
   return (
     <>
