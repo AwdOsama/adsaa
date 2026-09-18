@@ -44,8 +44,8 @@ export default function Navbar() {
           </NavLink>
 
           <div className="hidden md:flex items-center">
-            <div className="flex items-center rounded-full border border-[#262626] bg-[#161616] p-1.5">
-              <NavLink to="/" end className={desktopLinkClass}>
+            <div className="flex items-center rounded-full border  border-[#262626] bg-[#161616] p-1.5">
+              <NavLink to="/" end className={desktopLinkClass} >
                 الرئيسية
               </NavLink>
               <NavLink to="/blog" className={desktopLinkClass}>
