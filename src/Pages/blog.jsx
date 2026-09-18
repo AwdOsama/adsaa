@@ -47,7 +47,7 @@ export default function Blog() {
 
   return (
     <>
-      <div class="min-h-screen bg-[#0a0a0a]">
+      <div className="min-h-screen bg-[#0a0a0a]">
         <div className="relative overflow-hidden py-20">
           <div className="absolute inset-0 bg-[#0a0a0a]"></div>
           <div className="absolute inset-0 bg-[size:60px_60px] bg-[linear-gradient(rgba(38,38,38,0.5)_1px,transparent_1px),linear-gradient(90deg,rgba(38,38,38,0.5)_1px,transparent_1px)]"></div>
